@@ -125,7 +125,7 @@ http://localhost:3000
 
 ---
 
-## Estructura del Proyecto
+## Estructura del Proyecto (ANTES DE TERMINAR, ESTE SE SUBIÓ EN EL ENTREGABLE DE AVANCES)
 
 ```
 HABIT_TRACKER/
@@ -196,7 +196,105 @@ HABIT_TRACKER/
 
 
 ---
+## Estructura del Proyecto (COMPLETADO)
+```
+HABIT_TRACKER/
+├── config/
+│   └── database.js
+│
+├── controllers/
+│   ├── authController.js
+│   ├── habitController.js
+│   ├── categoryController.js
+│   ├── trackingController.js
+│   ├── routineController.js
+│   └── statsController.js
+│
+├── middleware/
+│   ├── auth.js
+│   ├── errorHandler.js
+│   └── validation.js
+│
+├── models/
+│   ├── User.js
+│   ├── Habit.js
+│   ├── Category.js
+│   ├── Tracking.js
+│   └── Routine.js
+│
+├── public/
+│   ├── css/
+│   │   ├── index.css
+│   │   ├── login.css
+│   │   ├── register.css
+│   │   ├── dashboard.css
+│   │   ├── habits.css
+│   │   ├── routines.css
+│   │   ├── statistics.css
+│   │   ├── profile.css
+│   │   ├── forgot-password.css
+│   │   └── reset-password.css
+│   │
+│   ├── js/
+│   │   ├── login.js
+│   │   ├── register.js
+│   │   ├── dashboard.js
+│   │   ├── habits.js
+│   │   ├── routines.js
+│   │   ├── statistics.js
+│   │   ├── profile.js
+│   │   ├── forgot-password.js
+│   │   └── reset-password.js
+│   │
+│   └── images/
+│
+├── routes/
+│   ├── auth.js
+│   ├── habits.js
+│   ├── categories.js
+│   ├── tracking.js
+│   ├── routines.js
+│   └── stats.js
+│
+├── services/
+│   ├── emailService.js
+│   ├── streakService.js
+│   ├── statsService.js
+│   ├── authService.js
+│   └── habitService.js
+│
+├── tests/
+│   ├── auth.test.js
+│   ├── habits.test.js
+│   └── integration.test.js
+│
+├── utils/
+│   ├── jwtHelper.js
+│   ├── dateHelper.js
+│   └── validators.js
+│
+├── views/
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── habits.html
+│   ├── routines.html
+│   ├── statistics.html
+│   ├── profile.html
+│   ├── forgot-password.html
+│   └── reset-password.html
+│
+├── INCIDENCIAS.md
+├── .env.example
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── server.js
+└── README.md
+```
 
+---
 
 
 ##  Autor
