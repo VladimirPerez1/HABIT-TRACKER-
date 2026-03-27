@@ -1,4 +1,3 @@
-
 const API_URL = 'http://localhost:3000/api';
 
 // Función para mostrar alertas
@@ -67,7 +66,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             localStorage.setItem('token', data.data.token);
             localStorage.setItem('user', JSON.stringify(data.data.user));
 
-            // Mostrar mensaje de éxito
+            // Mostrar mensaje de exito
             showAlert('¡Login exitoso! Redirigiendo...', 'success');
 
             // Redirigir al dashboard después de 1 segundo
@@ -78,7 +77,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             // Mostrar error
             showAlert(data.message || 'Credenciales inválidas');
             
-            // Restaurar botón
+            // Restaurar boton
             btnText.classList.remove('d-none');
             btnSpinner.classList.add('d-none');
             loginBtn.disabled = false;
